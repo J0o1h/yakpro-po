@@ -82,7 +82,7 @@ function obfuscate($filename)                   // takes a file_path as input, r
         $endcode = substr($code,6);
 
         $code  = '<?php'.PHP_EOL;
-        $code .= $conf->get_comment();                                          // comment obfuscated source
+        // $code .= $conf->get_comment();                                          // comment obfuscated source
         if (isset($conf->extract_comment_from_line) && isset($conf->extract_comment_to_line) )
         {
             $t_source = file($filename);
